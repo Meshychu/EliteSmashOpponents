@@ -101,9 +101,10 @@
         'zelda.png',
         'zss.png'
       ]
+
       const gallery = document.getElementById('gallery');
       
-      imagesNames.forEach(name=> {
+      imageNames.forEach(name=> {
         const img = document.createElement('img');
         img.src = `images/${name}`;
         gallery.appendChild(img);

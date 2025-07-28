@@ -1,9 +1,11 @@
 img {
-    width: 100px;
+    width: 70px;
     margin: 5px;
 }
 
 #gallery {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
+

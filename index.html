@@ -14,14 +14,101 @@
     <div id="gallery"></div>
      
     <script>
-      const gallery = document.getElementById('gallery');
-      const imageCount = 100
 
-      for (let i = 1; i <= imageCount; i++) {
+      const imageNames = [
+        'aegis.png',
+        'banjo.webp',
+        'bayonetta.webp',
+        'belmont.png',
+        'bjr.webp',
+        'bowser.webp',
+        'byleth.webp',
+        'cfalcon.webp',
+        'chrom.webp',
+        'cloud.webp',
+        'corrin.webp',
+        'darkpit.webp',
+        'darksamus.webp',
+        'diddykong.webp',
+        'docmario.webp',
+        'donkeykong.webp',
+        'duckhunt.webp',
+        'falco.webp',
+        'fox.webp',
+        'ganon.webp',
+        'gnw.png',
+        'greninja.webp',
+        'hero.webp',
+        'ics.webp',
+        'ike.webp',
+        'incineroar.webp',
+        'inkling.webp',
+        'isabelle.webp',
+        'jigglypuff.webp',
+        'joker.webp',
+        'kazuya.webp',
+        'ken.webp',
+        'kingdedede.webp',
+        'kingkrool.webp',
+        'kirby.webp',
+        'link.webp',
+        'littlemac.webp',
+        'lucario.webp',
+        'lucas.webp',
+        'lucina.webp',
+        'luigi.webp',
+        'mario.webp',
+        'marth.webp',
+        'megaman.webp',
+        'metaknight.webp',
+        'mewtwo.webp',
+        'miibrawl.webp',
+        'miigun.webp',
+        'miisword.webp',
+        'minmin.png',
+        'ness.png',
+        'olimar.png',
+        'pacman.png',
+        'palutena.png',
+        'peach.png',
+        'pichu.png',
+        'pikachu.png',
+        'pit.png',
+        'pplant.png',
+        'pt.png',
+        'ridley.png',
+        'rob.png',
+        'robin.png',
+        'rosalina.png',
+        'roy.png',
+        'ryu.png',
+        'samus.png',
+        'sephiroth.png',
+        'sheik.png',
+        'shulk.png',
+        'snake.png',
+        'sonic.png',
+        'sora.png',
+        'steve.png',
+        'terry.png',
+        'toonlink.png',
+        'villager.png',
+        'wario.png',
+        'wiifit.png',
+        'wolf.png',
+        'yoshi.png',
+        'younglink.png',
+        'zelda.png',
+        'zss.png'
+      ]
+      const gallery = document.getElementById('gallery');
+      
+      imagesNames.forEach(name=> {
         const img = document.createElement('img');
-        img.src = `images/image${i}.png`;
+        img.src = `images/${name}`;
         gallery.appendChild(img);
-      }
+      });
+      
       </script>
    </body>
 </html>

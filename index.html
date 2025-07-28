@@ -3,8 +3,25 @@
    <head>
        <meta charset="UTF-8">
        <title>Smash Opponents Record</title>
+       <style>
+        img {
+          width: 150px;
+          margin: 5px;
+        }
+       </style>
    </head>
    <body>
-     <img src="images/mario.webp"></img>
+    <div id="gallery"></div>
+     
+    <script>
+      const gallery = document.getElementById('gallery');
+      const imageCount = 100
+
+      for (let i = 1; i <= imageCount; i++) {
+        const img = document.createElement('img');
+        img.src = `images/image${i}.png`;
+        gallery.appendChild(img);
+      }
+      </script>
    </body>
 </html>
